@@ -1,0 +1,117 @@
+%price-descr {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1B1A17;
+}
+
+.promo {
+  height: 768px;
+  background: #FDFDFB;
+  background-image: url("../images/bg-promo.png");
+  background-repeat: no-repeat;
+  background-position: 530px;
+
+  // .promo__row
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  // .promo__catalog
+
+  &__catalog {
+    width: 500px;
+  }
+
+  // .promo__title
+
+  &__title {
+    background-image: url("../images/line-promo.png");
+    background-repeat: no-repeat;
+    background-position: 0 32px;
+    padding-left: 65px;
+    h1 {
+      margin-top: 236px;
+      font-size: 45px;
+      line-height: 60px;
+      color: #1B1A17;
+    }
+    p {
+      font-size: 30px;
+      line-height: 40px;
+      color: #1B1A17;
+      margin-bottom: 39px;
+    }
+  }
+
+  // .promo__text
+
+  &__text {
+    width: 330px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(27, 26, 23, 0.82);
+    padding-left: 65px;
+    margin-bottom: 64px;
+  }
+
+  // .promo__btn
+
+  &__btn {
+    cursor: pointer;
+    background: #444240;
+    margin-left: 65px;
+    padding: 26px 38px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  // .promo__watch
+  
+  &__watch {
+    width: 666px;
+    height: 804px;
+    background-image: url("../images/bg-watch.png");
+    background-repeat: no-repeat;
+    background-position: 85px -10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .promo__price
+
+  &__price {
+    @extend %price-descr;
+    width: 140px;
+    margin-top: 138px;
+    background-image: url("../images/line-promo.png");
+    background-repeat: no-repeat;
+    background-position: 90px 10px;
+  }
+
+  // .promo__description
+
+  &__description {
+    @extend %price-descr;
+    align-self: end;
+    margin-top: 480px;
+    padding-left: 65px;
+    background-image: url("../images/line-promo.png");
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+  }
+}
