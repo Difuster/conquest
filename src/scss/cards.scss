@@ -50,7 +50,7 @@
   background: #FDFDFB;
   background-image: url(../images/card-ellipse.png);
   background-repeat: no-repeat;
-  background-position: 25px 80px;
+  background-position: 50% 50%;
   padding: 40px 28px;
 
   // .card__title
@@ -83,5 +83,136 @@
     background-repeat: no-repeat;
     background-position: 0 12px;
     padding-left: 48px;
+  }
+}
+
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 1024px) and (max-width : 1224px--------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+  /*--- Tablet landscape --- */
+  .card {
+    width: 300px;
+    background-position: 50% 50%;
+    background-size: 90% 70%;
+    padding: 30px 28px;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 800px) and (max-width : 1024px)--------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+  /*--- Small tablet landscape ---*/
+  .cards {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  
+  .card {
+    width: 230px;
+    background-position: 50% 50%;
+    background-size: 90% 70%;
+    padding: 20px 10px;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 690px) and (max-width : 800px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+  /*--- Tablet portrait ---*/
+  .cards {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  
+  .card {
+    width: 200px;
+    background-position: 50% 50%;
+    background-size: 90% 65%;
+    padding: 20px 10px;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 595px) and (max-width : 690px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+  /*--- Small tablet portrait ---*/
+  .cards {
+    h2 {
+      font-size: 26px;
+    }
+  }
+  
+  .card {
+    width: 160px;
+    background-position: 55% 50%;
+    background-size: 80% 60%;
+    padding: 10px 10px;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 480px) and (max-width : 595px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+  /*--- Mobile landscape ---*/
+  .cards {
+    padding: 30px 0;
+    h2 {
+      font-size: 26px;
+    }
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__title {
+      h2 {
+        margin-bottom: 15px;
+      }
+    }
+    .card {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 320px) and (max-width : 480px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /*--- Mobile portrait ---*/
+  .cards {
+    padding: 30px 0;
+    h2 {
+      font-size: 26px;
+    }
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__title {
+      h2 {
+        margin-bottom: 15px;
+      }
+    }
+    .card {
+      width: 270px;
+      background-position: 55% 50%;
+      background-size: 100% 70%;
+      padding: 10px 10px;
+      margin-bottom: 15px;
+    }
   }
 }

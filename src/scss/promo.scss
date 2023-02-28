@@ -10,16 +10,16 @@
 .promo {
   height: 768px;
   background: #FDFDFB;
-  background-image: url("../images/bg-promo.png");
-  background-repeat: no-repeat;
-  background-position: 530px;
 
   // .promo__row
 
   &__row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;  
+    background-image: url("../images/bg-promo.png");
+    background-repeat: no-repeat;
+    background-position: 63% -5%;
   }
 
   // .promo__catalog
@@ -87,7 +87,7 @@
     height: 804px;
     background-image: url("../images/bg-watch.png");
     background-repeat: no-repeat;
-    background-position: 85px -10px;
+    background-position: 50% -10px;
     display: flex;
     flex-direction: column;
   }
@@ -113,5 +113,242 @@
     background-image: url("../images/line-promo.png");
     background-repeat: no-repeat;
     background-position: 0 10px;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 1024px) and (max-width : 1224px)-------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+  /*--- Tablet landscape --- */
+  .promo {
+    height: 525px;
+
+    &__row {
+      background-position: 61% -5%;
+      background-size: 40% 95%;
+    }
+
+    &__title {
+      h1 {
+        margin-top: 150px;
+      }
+    }
+
+    &__watch {
+      width: 600px;
+      height: 550px;
+      background-size: contain;
+      background-position: 40% -10px;
+    }
+
+    &__price {
+      margin-top: 90px;
+    }
+
+    &__description {
+      margin-top: 280px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 800px) and (max-width : 1024px)--------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+  /*--- Small tablet landscape ---*/
+  .promo {
+    height: 525px;
+    
+    &__row {
+      background-position: 61% -5%;
+      background-size: 35% 95%;
+    }
+
+    &__title {
+      h1 {
+        font-size: 36px;
+        margin-top: 150px;
+      }
+    }
+
+    &__watch {
+      width: 600px;
+      height: 550px;
+      background-size: contain;
+      background-position: 40% -10px;
+    }
+
+    &__price {
+      font-size: 14px;
+      margin-top: 90px;
+      background-position: 75px;
+      background-size: 25% 8%;
+    }
+
+    &__description {
+      font-size: 14px;
+      margin-top: 280px;
+      background-position: 30px;
+      background-size: 15% 8%;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 690px) and (max-width : 800px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+  /*--- Tablet portrait ---*/
+  .promo {
+    height: 525px;
+    
+    &__row {
+      background-position: 61% -5%;
+      background-size: 40% 95%;
+    }
+
+    &__title {
+      h1 {
+        font-size: 30px;
+        margin-top: 110px;
+      }
+    }
+
+    &__watch {
+      width: 600px;
+      height: 550px;
+      background-size: 110% 100%;
+      background-position: 40% -10px;
+    }
+
+    &__price {
+      display: none;
+    }
+
+    &__description {
+      display: none;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 595px) and (max-width : 690px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+  /*--- Small tablet portrait ---*/
+  .promo {
+    height: auto;
+    
+    &__row {
+      background-position: 100% 50%;
+      background-size: 60% 140%;
+    }
+
+    &__title {
+      h1 {
+        font-size: 26px;
+        margin-top: 20px;
+      }
+      >p {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+    
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__catalog {
+      padding-bottom: 30px;
+    }
+
+    &__watch {
+      display: none;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 480px) and (max-width : 595px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+  /*--- Mobile landscape ---*/
+  .promo {
+    height: auto;
+    
+    &__row {
+      background-position: 100% 50%;
+      background-size: 60% 140%;
+    }
+
+    &__title {
+      h1 {
+        font-size: 26px;
+        margin-top: 20px;
+      }
+      >p {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+    
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__catalog {
+      padding-bottom: 30px;
+    }
+
+    &__watch {
+      display: none;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 320px) and (max-width : 480px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /*--- Mobile portrait ---*/
+  .promo {
+    height: auto;
+    
+    &__row {
+      background-position: 100% 50%;
+      background-size: 60% 140%;
+    }
+
+    &__title {
+      h1 {
+        font-size: 26px;
+        margin-top: 20px;
+      }
+      >p {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+    
+    &__text {
+      margin-bottom: 30px;
+      padding-left: 0px;
+    }
+
+    &__catalog {
+      padding-bottom: 30px;
+    }
+
+    &__watch {
+      display: none;
+    }
   }
 }

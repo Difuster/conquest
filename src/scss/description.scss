@@ -5,14 +5,13 @@
 }
 
 .description {
-  padding: 52px 0 21px 0;
-  background: url(../images/bg-description.jpg) no-repeat,
-    url(../images/bg-lines-description.png) 650px no-repeat;
-  background-color: #FDFDFB;
+  background: url(../images/bg-lines-description.png) 100% no-repeat, 
+  linear-gradient(90deg, rgb(248, 245, 240) 35%, #FDFDFB 0%);
 
   // .description__row
 
   &__row {
+    padding: 52px 0 21px 0;
     @extend %d-flex-row-nowrap;
   }
 
@@ -96,5 +95,204 @@
   &__arrow {
     cursor: pointer;
     align-self: center;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 1024px) and (max-width : 1224px)-------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+  /*--- Tablet landscape --- */
+
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 800px) and (max-width : 1024px)--------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+  /*--- Small tablet landscape ---*/
+  .description {
+    background: url(../images/bg-lines-description.png) 100% no-repeat, 
+    linear-gradient(90deg, rgb(248, 245, 240) 35%, #FDFDFB 0%);
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+      padding-top: 35px;
+      margin-bottom: 47px;
+    }
+    &__text {
+      width: auto;
+      font-size: 14px;
+    }
+  }
+  .carousel {
+    &__img {
+      width: 360px;
+      margin-left: 30px;
+      margin-right: 35px;
+    }
+    &__switcher {
+      padding-left: 270px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 690px) and (max-width : 800px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+  /*--- Tablet portrait ---*/
+  .description {
+    background: url(../images/bg-lines-description.png) 100% no-repeat, 
+    linear-gradient(90deg, rgb(248, 245, 240) 35%, #FDFDFB 0%);
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+      padding-top: 0;
+      margin-bottom: 47px;
+    }
+    &__text {
+      width: auto;
+      font-size: 14px;
+    }
+    &__row {
+      padding: 32px 0 21px;
+  }
+  }
+  .carousel {
+    &__img {
+      width: 300px;
+      margin-left: 30px;
+      margin-right: 35px;
+    }
+    &__switcher {
+      padding-left: 240px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 595px) and (max-width : 690px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+  /*--- Small tablet portrait ---*/
+  .description {
+    background: url(../images/bg-lines-description.png) 100% no-repeat, 
+    linear-gradient(90deg, rgb(248, 245, 240) 35%, #FDFDFB 0%);
+    &__row {
+      padding: 32px 0 21px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
+    &__text {
+      width: auto;
+      font-size: 12px;
+      line-height: 130%;
+    }
+    &__btn {
+      padding: 15px 10px;
+    }
+  }
+  .carousel {
+    &__img {
+      width: 300px;
+      margin-left: 30px;
+      margin-right: 35px;
+    }
+    &__switcher {
+      padding-left: 240px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 480px) and (max-width : 595px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+  /*--- Mobile landscape ---*/
+  .description {
+    background: rgb(248, 245, 240);
+    &__row {
+      padding: 32px 0 21px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 30px;
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
+    &__text {
+      width: auto;
+      font-size: 14px;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      padding: 15px 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .carousel {
+    &__img {
+      width: 450px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    &__switcher {
+      padding-left: 200px
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 320px) and (max-width : 480px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /*--- Mobile portrait ---*/
+  .description {
+    background: rgb(248, 245, 240);
+    &__row {
+      padding: 32px 0 21px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
+    &__text {
+      width: auto;
+      font-size: 12px;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      padding: 15px 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .carousel {
+    &__img {
+      width: 300px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    &__switcher {
+      padding-left: 125px
+    }
   }
 }
